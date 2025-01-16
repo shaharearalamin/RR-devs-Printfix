@@ -1,0 +1,122 @@
+@use "../utils" as *;
+
+.w-img {
+  width: 100%;
+}
+.m-img {
+  & img {
+    max-width: 100%;
+  }
+}
+
+.margin-lf-rt {
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 50px;
+  overflow: hidden;
+  @media #{$xl,$lg,$md,$sm} {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  @media #{$xs} {
+    margin-left: 14px;
+    margin-right: 14px;
+    border-radius: 20px;
+  }
+}
+
+.section-space-margin {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  @media #{$xl,$lg,$md,$sm,$xs} {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+.section-space-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @media #{$md} {
+    padding-top: 80px;
+  padding-bottom: 80px;
+  }
+  @media #{$sm,$xs} {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.fix {
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-11 {
+  z-index: 11;
+}
+
+.overflow-y-visible {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.overflow-x-visible {
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.br-5 {
+  border-radius: 5px;
+}
+.br-20 {
+  border-radius: 20px;
+}
+.br-24 {
+  border-radius: 24px;
+}
+.br-50 {
+  border-radius: 50px;
+}
+
+.text-primary-color {
+  color: var(--rt-primary-color);
+}
+.text-secondary-color {
+  color: var(--rt-secondary-color);
+}
+.bg-primary-color {
+  background-color: var(--pf-primary-color);
+}
+.bg-secondary-color {
+  background-color: var(--pf-secondary-color);
+}
+.bg-secondary-color-50 {
+  background-color: var(--rt-secondary-color-50);
+}
+.bg-offcanvas-color {
+  background-color: var(--rt-offcanvas-bg-color);
+}
+
+.tp-slide-transtion {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.tp-brand-slide-element {
+  width: auto;
+  display: inline-block;
+}
+
+.br-primary-color {
+  border: 1px solid var(--rt-primary-color);
+}

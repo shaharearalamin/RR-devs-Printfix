@@ -1,0 +1,1 @@
+sass --watch C:\Users\User\Desktop\RRDevs\assets\scss\main.scss:C:\Users\User\Desktop\RRDevs\assets\css\style.css

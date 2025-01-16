@@ -1,0 +1,31 @@
+@use "../utils" as *;
+
+.rt__section-title {
+  & h6 {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+	margin: 0;
+	padding-right: 14px;
+  }
+  & h1 {
+    & span {
+      color: #16171a;
+    }
+    @media #{$md} {
+      font-size: 40px;
+    }
+    @media #{$sm,$xs} {
+      font-size: 30px;
+    }
+    &  br {
+      @media #{$sm,$xs} {
+        display: none;
+      }
+    }
+  }
+  & p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+  }
+}

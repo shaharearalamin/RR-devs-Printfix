@@ -1,0 +1,79 @@
+@use "../../utils" as *;
+
+.rt__overview {
+    &-wrapper{
+        z-index: 2;
+    }
+  &-card {
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    @media #{$lg,$md,$xs} {
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+  
+    &:hover{
+      & span{
+        animation: hoverimg2 .3s ease-in-out;
+      }
+    }
+   & > div {
+     width: 100%;
+    }
+    &-icon {
+      width: 160px;
+      height: 168px;
+      background-color: var(--rt-secondary-color);
+      display: grid;
+      place-items: center;
+      border-radius: 20px;
+      position: relative;
+      @media #{$lg,$md,$xs} {
+        width: 100%;
+      }
+      & h2 {
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff ;
+      }
+    }
+  }
+  &-shape-1{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .05;
+  }
+}
+
+
+
+@keyframes hoverimg2 {
+  0% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  20% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  40% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  60% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  80% {
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}

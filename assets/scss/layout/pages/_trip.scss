@@ -1,0 +1,50 @@
+@use "../../utils" as *;
+
+.rt__trip {
+  &-area {
+    margin-top: -200px;
+  }
+  &-wrapper {
+    z-index: 2;
+    @media #{$md,$sm,$xs} {
+      padding: 30px;
+    }
+  }
+  &-img {
+    margin-top: -50px;
+    & span {
+      & img {
+        max-width: 100%;
+        @media #{$xs} {
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+  &-shape {
+    top: 15%;
+    left: 30%;
+    z-index: -1;
+  }
+  &-text {
+    @media #{$xl,$lg} {
+      padding-left: 50px;
+    }
+    @media #{$md,$sm,$xs} {
+      padding-left: 0px;
+    }
+    & p {
+      & br {
+        @media #{$lg,$md,$sm,$xs} {
+          display: none;
+        }
+      }
+    }
+    & h1 {
+      @media #{$sm,$xs} {
+        font-size: 30px;
+      }
+    }
+  }
+}
+

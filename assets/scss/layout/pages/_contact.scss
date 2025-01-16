@@ -1,0 +1,75 @@
+@use "../../utils" as *;
+
+.rt__contact {
+    &-area{
+        margin-top: -210px;
+    }
+  &-col-wrapper-1 {
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media #{$xl} {
+      padding: 20px 30px;
+    }
+    @media #{$md} {
+      padding: 10px 42px;
+    }
+    @media #{$sm,$xs} {
+      padding: 10px 42px;
+      gap: 10px;
+    }
+    @media #{$xs} {
+      padding: 20px 26px;
+      gap: 10px;
+    }
+    & h1 {
+      @media #{$xs} {
+        font-size: 39px;
+      }
+    }
+    & p {
+      & br {
+        @media #{$sm} {
+          display: none;
+        }
+      }
+    }
+    & form {
+      display: flex;
+      align-items: center;
+      & input {
+        width: 100%;
+      }
+      & button {
+        padding: 16px 20px;
+        border-radius: 150px;
+        background-color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--rt-primary-color);
+        text-wrap: nowrap;
+      }
+    }
+  }
+  &-shape-1{
+    top: 50px;
+    left: 0;
+    @media #{$sm} {
+      display: none;
+    }
+  }
+  &-col-wrapper-2{
+    @media #{$lg,$md,$sm} {
+      display: grid;
+      place-items: center;
+      padding-bottom: 50px;
+    }
+    & span {
+        & img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+  }
+}
