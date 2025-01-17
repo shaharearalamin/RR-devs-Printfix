@@ -1,111 +1,102 @@
 @use "../../utils/" as *;
 
-.rt__hero {
-  &-slider {
-    & .swiper-wrapper {
-      & .swiper-slide {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        position: relative;
-        cursor: grab;
-        & img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 2.5s ease-in-out;
-          transform: scale(1);
-        }
-        &-active img {
-          transform: scale(1.3);
-        }
-      }
-    }
+.pf__hero {
+  &-shape-1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: leftright 1s alternate infinite;
   }
-  &-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  &-shape-2 {
+    top: 40%;
+    right: 10px;
+    animation: updown2 .8s alternate infinite;
+    animation-delay: .8s ;
   }
-  &-text {
-    padding-top: 230px;
-    padding-bottom: 200px;
-    @media #{$md} {
-      padding-top: 130px;
-      padding-bottom: 100px;
-    }
-    @media #{$sm,$xs} {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
+  &-col-wrapper-1 {
     & h1 {
-      font-size: 80px;
-      text-transform: capitalize;
-      text-align: center;
-      color: #fff;
-      animation: textanimation 1s ease-in-out;
-      animation-delay: 1.2s;
-      @media #{$lg} {
-        font-size: 70px;
+      font-size: 64px;
+      line-height: 86px;
+    }
+  }
+  &-col-wrapper-2 {
+    position: relative;
+    height: 300px;
+    & span {
+      width: 300px;
+      height: 370px;
+      display: block;
+      overflow: hidden;
+      outline: 4px solid #fff;
+      border-radius: 5px;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
-      @media #{$md} {
-        font-size: 60px;
+      &:nth-child(1) {
+        position: absolute;
+        top: -140px;
+        left: 0;
+        transform: rotate(-20deg);
+        animation: updown1 .8s alternate infinite;
       }
-      @media #{$sm,$xs} {
-        font-size: 45px;
-      }
-      
-      & br {
-        @media #{$xl,$lg,$md,$sm,$xs} {
-          display: none;
-        }
-      }
-
-      & span {
-        color: var(--rt-secondary-color);
+      &:nth-child(2) {
+        position: absolute;
+        bottom: -226px;
+        left: 129px;
+        transform: rotate(27deg);
+        animation: updown2 .8s alternate infinite;
       }
     }
+  }
+  &-col-wrapper-3 {
     & p {
-      font-size: 16px;
-      text-align: center;
-      color: #fff;
-      padding-top: 20px;
-      animation: textanimation 1s ease-in-out;
-      animation-delay: 1.3s;
-      & br {
-        @media #{$xs} {
-          display: none;
-        }
-      }
+      font-family: var(--pf-accent-font);
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
     }
-    & button {
-      animation: textanimation 1s ease-in-out;
-      animation-delay: 1.4s;
+  }
+  &-slider-btn{
+    & div{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid rgb(0, 44, 31);
+      display: grid;
+      place-items: center;
     }
+    right: 50px;
+    bottom: 60px;
+    z-index: 99;
   }
 }
 
-@keyframes textanimation {
+
+
+@keyframes leftright {
   0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  50% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0.6;
+    margin-left: 20px;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0px);
+    margin-right: -20px;
+  }
+}
+@keyframes updown1 {
+  0% {
+    margin-bottom: -20px;
+  }
+  100% {
+    margin-top: 20px;
+  }
+}
+@keyframes updown2 {
+  0% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-bottom: -20px;
   }
 }

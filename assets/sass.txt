@@ -1,1 +1,4 @@
-sass --watch C:\Users\User\Desktop\RRDevs\assets\scss\main.scss:C:\Users\User\Desktop\RRDevs\assets\css\style.css
+<div class="pf__hero-slider-btn border p-absolute d-flex align-items-center gap-3">
+            <div class="pf__hero-next-btn"><i class="far fa-arrow-left"></i></div>
+          <div class="pf__hero-prev-btn"><i class="far fa-arrow-right"></i></div>
+          </div>

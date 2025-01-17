@@ -9,6 +9,12 @@
   }
 }
 
+.custom-container{
+  max-width: 1550px;
+  width: 100%;
+}
+
+
 .margin-lf-rt {
   margin-left: 60px;
   margin-right: 60px;
@@ -107,6 +113,9 @@
 .bg-offcanvas-color {
   background-color: var(--rt-offcanvas-bg-color);
 }
+.bg-hero-color {
+  background-color: var(--pf-bg-color);
+}
 
 .tp-slide-transtion {
   -webkit-transition-timing-function: linear;
@@ -119,4 +128,9 @@
 
 .br-primary-color {
   border: 1px solid var(--rt-primary-color);
+}
+
+.hero-custom-padding{
+  padding-top: 205px;
+  padding-bottom: 250px;
 }
