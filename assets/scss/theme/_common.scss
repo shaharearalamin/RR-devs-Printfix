@@ -14,21 +14,8 @@
   width: 100%;
 }
 
-
-.margin-lf-rt {
-  margin-left: 60px;
-  margin-right: 60px;
-  border-radius: 50px;
-  overflow: hidden;
-  @media #{$xl,$lg,$md,$sm} {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  @media #{$xs} {
-    margin-left: 14px;
-    margin-right: 14px;
-    border-radius: 20px;
-  }
+.section-space-mb{
+  margin-bottom: 120px;
 }
 
 .section-space-margin {
@@ -96,10 +83,10 @@
 }
 
 .text-primary-color {
-  color: var(--rt-primary-color);
+  color: var(--pf-primary-color);
 }
 .text-secondary-color {
-  color: var(--rt-secondary-color);
+  color: var(--pf-secondary-color);
 }
 .bg-primary-color {
   background-color: var(--pf-primary-color);
@@ -133,4 +120,14 @@
 .hero-custom-padding{
   padding-top: 205px;
   padding-bottom: 250px;
+}
+
+.bg-discount-card-1{
+  background-color: #F5F0EA;
+}
+.bg-discount-card-2{
+  background-color: #F6F7F9;
+}
+.bg-discount-card-3{
+  background-color: #F2F1EC;
 }
