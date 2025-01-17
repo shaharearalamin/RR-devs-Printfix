@@ -1,0 +1,11 @@
+@use "../../utils/" as *;
+
+.pf__text-brand {
+  &-wrapper {
+    & h6 {
+      font-weight: 500;
+    //   line-height: 256%;
+      color: var(--pf-primary-color);
+    }
+  }
+}

@@ -4,11 +4,11 @@
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    speed: 1000,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    speed: 2000,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     touchReleaseOnEdges: true,
     resistanceRatio: 0.5,
     keyboard: {
