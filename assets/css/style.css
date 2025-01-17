@@ -9029,6 +9029,27 @@ textarea {
   border-radius: 50%;
   place-items: center;
 }
+.pf__heading-mega-menu {
+  width: 950px;
+  background-color: var(--pf-primary-color);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 30px 40px;
+  justify-content: space-around;
+}
+.pf__heading-mega-menu-item {
+  border: 1px solid var(--pf-secondary-color);
+  border-radius: 5px;
+}
+.pf__heading-mega-menu-thumb {
+  padding: 20px;
+}
+.pf__heading-mega-menu-thumb img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
 .rt__hero-slider .swiper-wrapper .swiper-slide {
   width: 100%;
