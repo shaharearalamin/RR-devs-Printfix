@@ -66,4 +66,15 @@
     },
   });
 
+  // Blog slider
+  var swiper = new Swiper(".pf__blog-slider", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop:true,
+    navigation: {
+      nextEl: ".pf__blog-next-btn",
+      prevEl: ".pf__blog-prev-btn",
+    },
+  });
+
 })(jQuery);
