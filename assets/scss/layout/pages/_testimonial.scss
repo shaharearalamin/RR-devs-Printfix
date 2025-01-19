@@ -1,93 +1,22 @@
 @use "../../utils" as *;
 
-.rt__tes {
-    &-slider{
-        margin-right: -100px;
-        border-radius: 20px;
-        @media #{$lg,$md,$sm,$xs} {
-          margin-right: 0px;
-        // border-radius: 20px;
-        }
-    }
-  &-slide {
-    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
-    background: #fff;
-    position: relative;
-    @media #{$xl,$lg} {
-      padding: 40px;
-    }
-    @media #{$md,$sm} {
-      padding: 20px;
-    }
-    @media #{$xs} {
-      padding: 10px;
-    }
-    & > p {
-      font-size: 30px;
-      color: var(--rt-primary-color);
-      padding-bottom: 44px;
-      @media #{$md} {
-        font-size: 27px;
-      }
-      @media #{$sm} {
-        font-size: 22px;
-      }
-      @media #{$xs} {
-        font-size: 20px;
-      }
+.pf__tes {
+  &-slider {
+    & .swiper-slide {
+      box-shadow: rgba(0, 29, 8, 0.1) 0px 10px 15px;
+      background: #fff;
     }
   }
-  &-icon {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    & span {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      display: block;
-      overflow: hidden;
-      & img {
-        width: 100%;
-      }
-    }
-  }
-  &-slider-btn {
-    bottom: 70px;
-    right: -40px;
+  &-next-btn{
+    font-size: 40px;
+    right: 0;
+    bottom: 40%;
     z-index: 99;
-    @media #{$lg} {
-      bottom: 70px;
-      right: 0px;
-      z-index: 99;
-    }
-    @media #{$md} {
-      bottom: 70px;
-      right: 20px;
-      z-index: 99;
-    }
-    @media #{$sm} {
-      bottom: 30px;
-      right: 20px;
-      z-index: 99;
-    }
-    @media #{$xs} {
-      visibility: hidden;
-    }
   }
-  &-img {
-    & span {
-      width: 100%;
-      height: 100%;
-      display: block;
-      border-radius: 20px;
-      // overflow: hidden;
-      perspective: 1000px; /* Adds 3D perspective */
-     
-      & img {
-        width: 100%;
-        display: block;
-      }
-    }
+  &-prev-btn{
+    font-size: 40px;
+    left: 0;
+    bottom: 40%;
+    z-index: 99;
   }
 }

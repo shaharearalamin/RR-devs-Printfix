@@ -54,5 +54,16 @@
       disableOnInteraction: true,
     },
   });
+  
+  // testimonials slider
+  var swiper = new Swiper(".pf__tes-slider", {
+    loop:true,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".pf__tes-next-btn",
+      prevEl: ".pf__tes-prev-btn",
+    },
+  });
 
 })(jQuery);
