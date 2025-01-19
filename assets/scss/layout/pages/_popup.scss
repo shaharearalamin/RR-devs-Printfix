@@ -10,8 +10,8 @@
     }
   }
   &-col-wrapper-2 {
-    & img {
-      transform: rotate(-20deg);
+    & .pf__popup-img {
+      max-width: 100%;
       animation: popupimg .8s infinite alternate ;
     }
   }
@@ -31,11 +31,9 @@
 @keyframes popupimg {
   0% {
     transform: translateY(0px);
-    transform: rotate(-20deg);
   }
   100% {
     transform: translateY(-15px);
-    transform: rotate(-20deg);
   }
 }
 @keyframes playbtn {

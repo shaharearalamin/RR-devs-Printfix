@@ -539,6 +539,10 @@ textarea {
   background-color: #FAFAFA;
 }
 
+.bg-popup-color {
+  background-color: #D4DDDE;
+}
+
 /*--
     - Margin & Padding
 -----------------------------------------*/
@@ -10232,6 +10236,42 @@ textarea {
   color: white;
 }
 
+.pf__popup-col-wrapper-1 h6 {
+  font-family: var(--pf-accent-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+}
+.pf__popup-col-wrapper-2 .pf__popup-img {
+  max-width: 100%;
+  animation: popupimg 0.8s infinite alternate;
+}
+.pf__popup-play-btn-wrapper a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: var(--pf-common-white);
+  animation: playbtn 0.8s infinite alternate;
+}
+
+@keyframes popupimg {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes playbtn {
+  0% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .demo h1 {
   font-size: 100px;
   text-transform: uppercase;
