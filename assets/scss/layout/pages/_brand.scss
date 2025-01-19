@@ -1,0 +1,15 @@
+@use "../../utils" as *;
+
+.tp-slide-transition {
+    --webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+  .tp-brand-slide-element {
+    width: auto !important;
+    display: inline-block;
+    padding: 35px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+  }
+  

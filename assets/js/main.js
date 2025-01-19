@@ -23,4 +23,36 @@
       prevEl: ".pf__hero-prev-btn",
     },
   });
+
+  
+  // brand-1
+  var swiper = new Swiper(".tp-brand-top-active", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false, // if you want mouse cursur not working in this slider
+    speed: 4000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: true,
+    },
+  });
+
+  // brand-2
+  var swiper = new Swiper(".tp-brand-bottom-active", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    freemode: true,
+    centeredSlides: true,
+    allowTouchMove: false, // if you want mouse cursur not working in this slider
+    speed: 4000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: true,
+    },
+  });
+
 })(jQuery);

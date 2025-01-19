@@ -504,6 +504,10 @@ textarea {
   background-color: var(--pf-bg-color);
 }
 
+.bg-hero-color-50 {
+  background-color: #FDFFF2;
+}
+
 .tp-slide-transtion {
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
@@ -10328,6 +10332,20 @@ textarea {
     transform: translateY(10px);
   }
 }
+.tp-slide-transition {
+  --webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.tp-brand-slide-element {
+  width: auto !important;
+  display: inline-block;
+  padding: 35px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+}
+
 .demo h1 {
   font-size: 100px;
   text-transform: uppercase;
