@@ -8675,7 +8675,7 @@ textarea {
 .rt-footer-list li a {
   line-height: 2.4;
   font-size: 16px;
-  color: #fff;
+  color: #000000;
   transition: all 0.3s ease-in-out 0s;
 }
 .rt-footer-col h4 {
@@ -8736,7 +8736,7 @@ textarea {
   transform: scale(1.2);
 }
 .rt-footer-social-icon a i {
-  color: #fff;
+  color: #000000;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -8781,7 +8781,7 @@ textarea {
   font-weight: 400;
   font-size: 16px;
   line-height: 156%;
-  color: #fff;
+  color: #000000;
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
@@ -8793,11 +8793,11 @@ textarea {
 }
 
 .rt-copyright-area {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(124, 124, 124, 0.2);
   font-weight: 400;
   font-size: 16px;
   line-height: 187%;
-  color: #fff;
+  color: #000000;
 }
 @media (max-width: 576px) {
   .rt-copyright-area {
@@ -8816,7 +8816,7 @@ textarea {
   margin: 0 20px;
 }
 .rt-copyright-right-part a:hover {
-  color: var(--rt-secondary-color);
+  color: #FF3D00;
 }
 @media (max-width: 576px) {
   .rt-copyright-right-part a {

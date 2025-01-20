@@ -2,11 +2,11 @@
 
 .rt-copyright {
   &-area {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(124, 124, 124, 0.2);
     font-weight: 400;
     font-size: 16px;
     line-height: 187%;
-    color: #fff;
+    color: #000000;
     @media #{$xs} {
       text-align: center;
       padding: 28px 0px;
@@ -22,7 +22,7 @@
     & a {
       @include d-transition;
       &:hover{
-        color: var(--rt-secondary-color);
+        color: #FF3D00;
       }
       margin: 0 20px;
       @media #{$xs} {
