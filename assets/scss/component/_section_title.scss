@@ -14,4 +14,12 @@
     text-transform: capitalize;
     color: var(--pf-primary-color);
   }
+  & span {
+    font-family: var(--pf-accen-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+    color: var(--pf-paragraph-color);
+  }
 }

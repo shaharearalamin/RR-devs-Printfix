@@ -171,6 +171,14 @@
   text-transform: capitalize;
   color: var(--pf-primary-color);
 }
+.pf__section-title span {
+  font-family: var(--pf-accen-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: var(--pf-paragraph-color);
+}
 
 .rt__mouse-cursor {
   position: fixed;
@@ -414,6 +422,10 @@ textarea {
   padding-bottom: 120px;
 }
 
+.section-space-pb-50 {
+  padding-bottom: 50px;
+}
+
 .section-space-margin {
   margin-top: 120px;
   margin-bottom: 120px;
@@ -549,6 +561,10 @@ textarea {
 
 .bg-popup-color {
   background-color: #D4DDDE;
+}
+
+.bg-customer-color {
+  background-color: #FFEFEB;
 }
 
 /*--
@@ -9908,7 +9924,7 @@ textarea {
 }
 .pf__blog-card-date {
   margin-top: -40px;
-  background-color: red;
+  background-color: var(--pf-secondary-color);
   display: inline-block;
   padding: 15px 20px;
   z-index: 99;
@@ -10212,6 +10228,34 @@ textarea {
   border: 1px solid #f1f1f1;
 }
 
+.pf__customer-shape-1 {
+  left: -100px;
+  bottom: -50px;
+  animation: bookanimation 1s alternate infinite;
+}
+.pf__customer-shape-2 {
+  right: -90px;
+  bottom: -50px;
+  animation: bookanimation 1s alternate infinite;
+  animation-delay: 0.8s;
+}
+.pf__customer-shape-bottom {
+  bottom: -1px;
+  left: 0;
+  z-index: 99;
+}
+.pf__customer-shape-bottom img {
+  width: 100%;
+}
+
+@keyframes bookanimation {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
 .demo h1 {
   font-size: 100px;
   text-transform: uppercase;

@@ -1,0 +1,32 @@
+@use "../../utils" as *;
+
+.pf__customer {
+  &-shape-1 {
+    left: -100px;
+    bottom: -50px;
+    animation: bookanimation 1s alternate infinite;
+  }
+  &-shape-2 {
+    right: -90px;
+    bottom: -50px;
+    animation: bookanimation 1s alternate infinite;
+    animation-delay: 0.8s;
+  }
+  &-shape-bottom {
+    bottom: -1px;
+    left: 0;
+    z-index: 99;
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes bookanimation {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}

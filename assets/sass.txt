@@ -46,3 +46,6 @@
     transform: scale(1);
   }
 }
+
+
+style="background: url(./assets/img/bg/pf-customer-bg.jpg) center / contain no-repeat;"
